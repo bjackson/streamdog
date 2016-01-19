@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Streamdog</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <script type="text/javascript">
+    $(function () {
+      $('#submitBut').click(function (e) {
+        console.log('click');
+        console.log(JSON.stringify({
+          link: $("#magnetLinkField").val()
+        }));
+        $.ajax({
+          type: "POST",
+          url: '/stream',
+          data: JSON.stringify({
+            link: $("#magnetLinkField").val()
+          }),
+          contentType : 'application/json',
+        })
+      });
+    });
+    </script>
+
+    <form>
+      <label for="magnetLinkField">Magnet link:</label></br>
+      <input type="form-control" type="text" id="magnetLinkField"></br>
+      <a class="btn btn-primary" id="submitBut">Stream</button>
+    </form>
+  </body>
+</html>

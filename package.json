@@ -15,6 +15,7 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "castv2-client": "^1.1.1",
+    "express": "^4.13.3",
     "internal-ip": "^1.1.0",
     "mdns": "^2.2.11",
     "peerflix": "^0.32.3",
