@@ -14,6 +14,7 @@
   "author": "Brett Jackson <brett@brettjackson.org>",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "body-parser": "^1.14.2",
     "castv2-client": "^1.1.1",
     "express": "^4.13.3",
     "internal-ip": "^1.1.0",
