@@ -1,0 +1,23 @@
+{
+  "name": "streamdog",
+  "version": "0.0.0",
+  "description": "Streams torrents to a local chromecast.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "torrent",
+    "chromecast"
+  ],
+  "author": "Brett Jackson <brett@brettjackson.org>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "castv2-client": "^1.1.1",
+    "internal-ip": "^1.1.0",
+    "mdns": "^2.2.11",
+    "peerflix": "^0.32.3",
+    "read-torrent": "^1.3.0"
+  }
+}
